@@ -17,9 +17,16 @@ const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <>
-    <Head />
-    <QuizBackground backgroundImage = {  db.bg[Math.floor(Math.random() * db.bg.length)]}>
+    <QuizBackground backgroundImage = {  db.bg[2]}>
+    {/* <QuizBackground backgroundImage = {  db.bg[Math.floor(Math.random() * db.bg.length)]}> */}
+      <Head>
+          <title>Aprenda Next.js junto comigo</title>
+          <meta property="og:title" content="Quiz Mestre Jedi em JavaScript" key="title" />
+          <meta property="og:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--p3PH2gZq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/kh3ntlg6dnemjeaz531z.png"/>
+          <meta property="og:image:type" content="imagem/png"/>
+          <meta property="og:image:width" content="800"/>
+          <meta property="og:image:height" content="600"/> 
+      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -42,6 +49,5 @@ export default function Home() {
         <Footer />
       </QuizContainer>
     </QuizBackground>
-    </>
   )
 }
