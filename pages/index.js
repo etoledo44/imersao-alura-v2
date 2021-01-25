@@ -36,7 +36,7 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
-            <Input />
+            <Input withButton={true} placeholder="Digite seu nome" />
           </Widget.Content>
         </Widget>
         <Widget>
