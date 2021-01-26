@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import styled from 'styled-components';
 import db from '../db.json';
 import Footer from '../src/Components/Footer';
 import GitHubCorner from '../src/Components/GitHubCorner';
@@ -8,13 +7,7 @@ import QuizBackground from '../src/Components/QuizBackground';
 import QuizLogo from '../src/Components/QuizLogo';
 import Widget from '../src/Components/Widget';
 import Input from '../src/Components/Input';
-
-const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-`;
+import QuizContainer from '../src/Components/QuizContainer';
 
 export default function Home() {
   return (
@@ -48,7 +41,7 @@ export default function Home() {
               <p>Veja outros quiz, podem ser muito legais também</p>
               <Input disabled />
               <Input />
-              <Input />
+              <Input disabled />
             </Widget.Content>
           </Widget>
           <GitHubCorner projectUrl="https://www.github.com/etoledo44" />
